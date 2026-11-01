@@ -5460,22 +5460,6 @@ body.cert-modal-open {
   text-decoration: none;
 }
 
-#links .resume-options {
-  position: absolute;
-  z-index: 30;
-  left: 0;
-  top: calc(100% + 8px);
-  min-width: 190px;
-  display: grid;
-  gap: 2px;
-  padding: 7px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: var(--card);
-  color: var(--ink);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, .18);
-}
-
 #links .resume-options[hidden] {
   display: none !important;
 }
