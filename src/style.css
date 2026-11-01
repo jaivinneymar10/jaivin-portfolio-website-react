@@ -5734,3 +5734,32 @@ body.cert-modal-open {
     text-decoration: underline;
     text-underline-offset: 3px;
 }
+/* Align Figma, GitHub, LinkedIn and Resume horizontally */
+.side .sfoot #links {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex-wrap: wrap !important;
+    gap: 16px !important;
+    width: 100%;
+}
+
+.side .sfoot #links a,
+.side .sfoot #links .resume-trigger {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    margin: 0 !important;
+    padding: 4px 0 !important;
+    white-space: nowrap !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+.side .sfoot #links svg {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+}
