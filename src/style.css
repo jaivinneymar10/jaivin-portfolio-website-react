@@ -5892,19 +5892,4 @@ img {
     height: auto;
   }
 }
-/* Desktop-only Resume dropdown alignment fix */
-@media screen and (min-width: 769px) {
-    .resume-container {
-        position: relative;
-    }
-
-    .resume-dropdown {
-        position: absolute;
-        top: calc(100% + 8px);
-        right: 0;
-        left: auto;
-        transform: none;
-        z-index: 9999;
-    }
-}
 
