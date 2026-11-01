@@ -5763,3 +5763,28 @@ body.cert-modal-open {
     height: 17px;
     flex-shrink: 0;
 }
+/* CLS improvement: reserve space for images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Certificate image space */
+.cert-preview {
+  aspect-ratio: 1.414 / 1;
+  overflow: hidden;
+}
+
+/* Keep hero text from changing section height */
+.rl {
+  display: block;
+  min-height: 1.5em;
+}
+
+/* Avoid animation-related movement during initial loading */
+@media (prefers-reduced-motion: no-preference) {
+  .side,
+  .hero {
+    animation: none;
+  }
+}
