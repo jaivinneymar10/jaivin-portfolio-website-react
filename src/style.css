@@ -5392,7 +5392,13 @@ body.cert-modal-open {
     gap: 8px 16px;
     margin: 0;
   }
-
+#links .resume-options a:hover {
+  background: transparent !important;
+  box-shadow: none !important;
+  color: inherit !important;
+  -webkit-text-fill-color: currentColor !important;
+  opacity: 1 !important;
+}
   aside.side .sfoot #links a {
     display: inline-flex !important;
     visibility: visible !important;
@@ -5405,6 +5411,7 @@ body.cert-modal-open {
     line-height: 1.35;
     white-space: nowrap;
   }
+  
 
   aside.side .sfoot #links a svg {
     display: block !important;
