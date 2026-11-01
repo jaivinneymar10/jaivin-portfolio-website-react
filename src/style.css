@@ -5720,3 +5720,17 @@ body.cert-modal-open {
     display: inline-flex !important;
   }
 }
+/* Remove borders around social and resume links */
+#links a,
+#links .resume-trigger {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+/* Keep icons and text visible */
+#links a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
