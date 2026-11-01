@@ -3422,14 +3422,6 @@ pre.c {
   animation: sin .8s cubic-bezier(.2, .8, .2, 1) backwards calc(var(--s, 0)*70ms)
 }
 
-#links .resume-options a:hover {
-  background: transparent !important;
-  box-shadow: none !important;
-  color: inherit !important;
-  -webkit-text-fill-color: currentColor !important;
-  opacity: 1 !important;
-}
-
 .rl {
   display: block;
   min-height: 1.25em
