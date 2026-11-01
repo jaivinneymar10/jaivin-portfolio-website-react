@@ -5736,3 +5736,52 @@ body.cert-modal-open {
     display: inline-flex !important;
   }
 }
+/* Resume dropdown - Desktop and Mobile Responsive */
+
+/* Common dropdown */
+#links .resume-menu {
+    position: relative !important;
+}
+
+#links .resume-options {
+    box-sizing: border-box !important;
+    width: 190px;
+    min-width: 0;
+    max-width: calc(100vw - 24px);
+    z-index: 999 !important;
+}
+
+/* Desktop */
+@media screen and (min-width: 901px) {
+    #links .resume-options {
+        left: 50% !important;
+        right: auto !important;
+        transform: translateX(-50%) !important;
+    }
+}
+
+/* Mobile and tablet */
+@media screen and (max-width: 900px) {
+    #links .resume-options {
+        left: 50% !important;
+        right: auto !important;
+        transform: translateX(-50%) !important;
+        width: min(190px, calc(100vw - 24px)) !important;
+        max-width: calc(100vw - 24px) !important;
+    }
+
+    #links .resume-options a {
+        white-space: normal !important;
+        overflow-wrap: break-word;
+    }
+
+    aside.side .sfoot {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    aside.side .sfoot #links {
+        flex-wrap: wrap !important;
+        min-width: 0;
+    }
+}
