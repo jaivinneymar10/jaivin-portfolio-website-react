@@ -5788,3 +5788,107 @@ img {
     animation: none;
   }
 }
+/* Fix Resume dropdown alignment on mobile */
+@media (max-width: 900px) {
+  #links .resume-menu {
+    position: relative !important;
+  }
+
+  #links .resume-options {
+    left: 50% !important;
+    right: auto !important;
+    top: calc(100% + 8px) !important;
+    transform: translateX(-50%) !important;
+
+    width: 190px;
+    min-width: 190px;
+    box-sizing: border-box;
+  }
+} 
+/* =================================
+   MOBILE RESPONSIVE ONLY
+   Desktop design remains unchanged
+================================= */
+
+@media screen and (max-width: 900px) {
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  .app,
+  main {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  main {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+  }
+
+  .side {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .hero,
+  .about,
+  .projects,
+  .experience,
+  .skills,
+  .education,
+  .certificates,
+  .contact {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .ab,
+  .dgrid,
+  .case,
+  .lay,
+  .cg,
+  .flow {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .btns,
+  .stats {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  main {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  h1 {
+    font-size: clamp(28px, 8vw, 42px);
+  }
+
+  img {
+    height: auto;
+  }
+}
